@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SeismicLists>
+
+  <seismiclist>
+    <FileNameFormat>ProfileTopValuationCharacteristics</FileNameFormat>
+    <KeyCollection>AsOf,ProductID,ProductDescription,BenchmarkID,BenchmarkDescription</KeyCollection>
+    <ConfigFile>C:\Work\ABDataHandle_New\XmlConfig\ValCharacteristics.xml</ConfigFile>
+  </seismiclist>
+
+  <seismiclist>
+    <FileNameFormat>ProfileBlendValuationCharacteristics</FileNameFormat>
+    <KeyCollection>AsOf,ProductID,ProductDescription,BenchmarkID,BenchmarkDescription,CharacteristicCode</KeyCollection>
+    <ConfigFile>C:\Work\ABDataHandle_New\XmlConfig\BlendCharacteristics.xml</ConfigFile>
+  </seismiclist>
+
+  <seismiclist>
+    <FileNameFormat>ProfileBlendCountryGroupWeights</FileNameFormat>
+    <KeyCollection>AsOf,ProductID,ProductDescription,BenchmarkID,BenchmarkDescription,CountryGroup</KeyCollection>
+    <ConfigFile>C:\Work\ABDataHandle_New\XmlConfig\BlendCountryGroupWeights.xml</ConfigFile>
+  </seismiclist>
+
+  <seismiclist>
+    <FileNameFormat>ProfileSectorHoldings</FileNameFormat>
+    <KeyCollection>AsOf,ProductID,ProductDescription,BenchmarkID,BenchmarkDescription,Sector</KeyCollection>
+    <ConfigFile>C:\Work\ABDataHandle_New\XmlConfig\SectorHoldings.xml</ConfigFile>
+  </seismiclist>
+
+  <seismiclist>
+    <FileNameFormat>ProfileLargestHoldings</FileNameFormat>
+    <KeyCollection>AsOf,ProductID,ProductDescription,BenchmarkID,BenchmarkDescription,WeightType,SecuriyName</KeyCollection>
+    <ConfigFile>C:\Work\ABDataHandle_New\XmlConfig\LargestHoldings.xml</ConfigFile>
+  </seismiclist>
+
+  <seismiclist>
+    <FileNameFormat>ProfileMarketCapCharacteristics</FileNameFormat>
+    <KeyCollection>AsOf,ProductID,ProductDescription,BenchmarkID,BenchmarkDescription,CharacteristicCode</KeyCollection>
+    <ConfigFile>C:\Work\ABDataHandle_New\XmlConfig\MktCapCharacteristics.xml</ConfigFile>
+  </seismiclist>
+
+  <seismiclist>
+    <FileNameFormat>ProfileTopValuationCharacteristics</FileNameFormat>
+    <RequireColumns>AsOf,ProductID,ProductDescription,BenchmarkID,BenchmarkDescription,AccountPriceToBook,ReportingBenchmarkPriceToBook,AccountPECurrentYear,BenchmarkPECurrentYear</RequireColumns>
+    <KeyCollection>AsOf,ProductID,ProductDescription,BenchmarkID,BenchmarkDescription,AccountPriceToBook,BenchmarkPriceToBook,AccountPECurrentYear,BenchmarkPECurrentYear</KeyCollection>
+    <DataFilter>ProductID='16'</DataFilter>
+    <ConfigFile>C:\Work\ABDataHandle_New\XmlConfig\PriceToBookandForward.xml</ConfigFile>
+  </seismiclist>
+  
+</SeismicLists>

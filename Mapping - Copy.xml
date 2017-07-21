@@ -1,0 +1,696 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SourceMappings>
+
+  <!--HighIncomeexcelfileexampleQ-->
+  
+  <!--LipperGlobalRank (4)-->
+  <SourceMapping>
+    <NameRegex>HighIncomeexcelfileexampleQ(\d{5})</NameRegex>
+    <SheetName>LipperGlobalRank (4)</SheetName>
+    <AsOfDate>E1</AsOfDate>
+    <Table>LipperGlobalincomeFundsRankings</Table>
+    <MultiTable>true</MultiTable>
+    <Direction>Horizontal</Direction>
+    <TableColumn>
+      <Column Name="PeriodTime" Range="B3:F3"/>
+      <Column Name="Quartile" Range="B4:F4"/>
+      <Column Name="Rank" Range="B5:F5"/>
+      <Column Name="FundCode" Range="FIHIR"/>
+    </TableColumn>
+    <IsDelete>true</IsDelete>
+    <TableHead>true</TableHead>
+    <ColumnList>AsOfDate,PeriodTime,Quartile,Rank,FundCode</ColumnList>
+  </SourceMapping>
+
+  <!--Morningstar RisAdjRet (5)-->
+  <SourceMapping>
+    <NameRegex>HighIncomeexcelfileexampleQ(\d{5})</NameRegex>
+    <SheetName>Morningstar RisAdjRet (5)</SheetName>
+    <AsOfDate>H1</AsOfDate>
+    <Table>GBMorningstarRisAdjRet</Table>
+    <MultiTable>true</MultiTable>
+    <Direction>Vertical</Direction>
+    <TableColumn>
+      <Column Name="Item" Range="H7:H9" Ingore="(%)"/>
+      <Column Name="TotalRet" Range="I7:I9"/>
+      <Column Name="StdDev" Range="J7:J9"/>
+      <Column Name="InformationRatio" Range="K7:K9"/>
+      <Column Name="SharpeRatio" Range="L7:L9"/>
+      <Column Name="BattingAverage" Range="M7:M9"/>
+      <Column Name="FundCode" Range="FIHIR"/>
+    </TableColumn>
+    <IsDelete>true</IsDelete>
+    <TableHead>true</TableHead>
+    <ColumnList>AsOfDate,Item,TotalRet,StdDev,InformationRatio,SharpeRatio,BattingAverage,FundCode</ColumnList>
+  </SourceMapping>
+
+  <!--Quiltchart (6) -->
+  <SourceMapping>
+    <NameRegex>HighIncomeexcelfileexampleQ(\d{5})</NameRegex>
+    <SheetName>Quiltchart (6)</SheetName>
+    <AsOfDate></AsOfDate>
+    <Table>GBQuiltcharMultiSector</Table>
+    <MultiTable>false</MultiTable>
+    <Direction>Vertical</Direction>
+    <TableColumn>
+      <Column Name="Year" Range="[[Year]]" SearchRange="A3:AZ3"/>
+      <Column Name="Value" Range="{Year}4:{Year}10" FormatBy="Year"/>
+      <Column Name="Bond" Range="A4:A10"/>
+      <Column Name="FundCode" Range="FIHIR"/>
+    </TableColumn>
+    <IsDelete>true</IsDelete>
+    <TableHead>true</TableHead>
+    <ColumnList>AsOfDate,Year,Value,Bond,FundCode</ColumnList>
+  </SourceMapping>
+
+  <!--OPPORTUNITY SET (7)-->
+  <SourceMapping>
+    <NameRegex>HighIncomeexcelfileexampleQ(\d{5})</NameRegex>
+    <SheetName>OPPORTUNITY SET (7)</SheetName>
+    <AsOfDate>A1</AsOfDate>
+    <Table>GBMultiSectorOppSet</Table>
+    <MultiTable>true</MultiTable>
+    <Direction>Vertical</Direction>
+    <TableColumn>
+      <Column Name="Index" Range="E6:E500"/>
+      <Column Name="MarketValue" Range="F6:F500"/>
+      <Column Name="Fund" Range="FIHIR"/>
+    </TableColumn>
+    <IsDelete>true</IsDelete>
+    <TableHead>true</TableHead>
+    <ColumnList>AsOfDate,Index,MarketValue,Fund</ColumnList>
+  </SourceMapping>
+
+  <!--AB HI Sect PortConstruc (9)-->
+  <SourceMapping>
+    <NameRegex>HighIncomeexcelfileexampleQ(\d{5})</NameRegex>
+    <SheetName>AB HI Sect PortConstruc (9)</SheetName>
+    <AsOfDate></AsOfDate>
+    <Table>GBSectPortConstruc</Table>
+    <MultiTable>false</MultiTable>
+    <Direction>Vertical</Direction>
+    <TableColumn>
+      <Column Name="Sector" Range="[[Date]]" SearchRange="A2:AZ2" ConvertFormat="MMM yy" Ingore="'"/>
+      <Column Name="GovernmentsTreasuries" Range="{Sector}3:{Sector}3" FormatBy="Sector"/>
+      <Column Name="CorporateNonInvestmentGrade" Range="{Sector}6:{Sector}6" FormatBy="Sector"/>
+      <Column Name="CMBS" Range="{Sector}12:{Sector}12" FormatBy="Sector"/>
+      <Column Name="CMOABS" Range="{Sector}13:{Sector}13" FormatBy="Sector"/>
+      <Column Name="Other" Range="{Sector}14:{Sector}14" FormatBy="Sector"/>
+      <Column Name="GovernmentsSovereignAgencies" Range="{Sector}4:{Sector}4" FormatBy="Sector"/>
+      <Column Name="BankLoans" Range="{Sector}7:{Sector}7" FormatBy="Sector"/>
+      <Column Name="QuasiSovereigns" Range="{Sector}11:{Sector}11" FormatBy="Sector"/>
+      <Column Name="CorporateInvestmentGrade" Range="{Sector}5:{Sector}5" FormatBy="Sector"/>
+      <Column Name="EM_Treasuries" Range="{Sector}8:{Sector}8" FormatBy="Sector"/>
+      <Column Name="EM_Sovereigns" Range="{Sector}9:{Sector}9" FormatBy="Sector"/>
+      <Column Name="EM_CorporateBonds" Range="{Sector}10:{Sector}10" FormatBy="Sector"/>
+      <Column Name="FundCode" Range="FIHIR"/>
+    </TableColumn>
+    <IsDelete>true</IsDelete>
+    <TableHead>true</TableHead>
+    <ColumnList>AsOfDate,Sector,GovernmentsTreasuries,CorporateNonInvestmentGrade,CMBS,CMOABS,Other,GovernmentsSovereignAgencies,BankLoans,QuasiSovereigns,CorporateInvestmentGrade,EM_Treasuries,EM_Sovereigns,EM_CorporateBonds,FundCode</ColumnList>
+  </SourceMapping>
+
+  <!--AB HI Performance Summary (13)-->
+  <SourceMapping>
+    <NameRegex>HighIncomeexcelfileexampleQ(\d{5})</NameRegex>
+    <SheetName>AB HI Performance Summary (13)</SheetName>
+    <AsOfDate></AsOfDate>
+    <Table>GBPerformanceSummary</Table>
+    <MultiTable>true</MultiTable>
+    <Direction>Vertical</Direction>
+    <TableColumn>
+      <Column Name="ProductGroup" Range="US Domiciled Mutual Funds"/>
+      <Column Name="ProductBenchmark" Range="A2:A4"/>
+      <Column Name="QTD" Range="B2:B4"/>
+      <Column Name="Inception" Range="F2:F4"/>
+      <Column Name="ExpenseRatio" Range="B6:B6"/>
+      <Column Name="OneYR" Range="C2:C4"/>
+      <Column Name="ThreeYR" Range="D2:D4"/>
+      <Column Name="FiveYR" Range="E2:E4"/>
+      <Column Name="FundCode" Range="FIHIR"/>
+    </TableColumn>
+    <IsDelete>true</IsDelete>
+    <TableHead>true</TableHead>
+    <ColumnList>AsOfDate,ProductGroup,ProductBenchmark,QTD,Inception,ExpenseRatio,OneYR,ThreeYR,FiveYR,FundCode</ColumnList>
+  </SourceMapping>
+
+  <!--AB HI - Characteristics (14)-->
+  <SourceMapping>
+    <NameRegex>HighIncomeexcelfileexampleQ(\d{5})</NameRegex>
+    <SheetName>AB HI - Characteristics (14)</SheetName>
+    <AsOfDate>B1</AsOfDate>
+    <Table>GBSectAllo</Table>
+    <MultiTable>true</MultiTable>
+    <Direction>Vertical</Direction>
+    <TableColumn>
+      <Column Name="Sector" Range="A2:A11"/>
+      <Column Name="Value" Range="B2:B11"/>
+      <Column Name="FundCode" Range="FIHIR"/>
+    </TableColumn>
+    <IsDelete>true</IsDelete>
+    <TableHead>true</TableHead>
+    <ColumnList>AsOfDate,Sector,Value,FundCode</ColumnList>
+  </SourceMapping>
+  <!--AB HI - Characteristics (14)-->
+  <SourceMapping>
+    <NameRegex>HighIncomeexcelfileexampleQ(\d{5})</NameRegex>
+    <SheetName>AB HI - Characteristics (14)</SheetName>
+    <AsOfDate>B14</AsOfDate>
+    <Table>GBPortChar</Table>
+    <MultiTable>true</MultiTable>
+    <Direction>Vertical</Direction>
+    <TableColumn>
+      <Column Name="Item" Range="A15:A18"/>
+      <Column Name="Characteristics" Range="B15:B18"/>
+      <Column Name="FundCode" Range="FIHIR"/>
+    </TableColumn>
+    <IsDelete>true</IsDelete>
+    <TableHead>true</TableHead>
+    <ColumnList>AsOfDate,Item,Characteristics,FundCode</ColumnList>
+  </SourceMapping>
+  <!--AB HI - Characteristics (14)-->
+  <SourceMapping>
+    <NameRegex>HighIncomeexcelfileexampleQ(\d{5})</NameRegex>
+    <SheetName>AB HI - Characteristics (14)</SheetName>
+    <AsOfDate>B21</AsOfDate>
+    <Table>GBQuaDis</Table>
+    <MultiTable>true</MultiTable>
+    <Direction>Vertical</Direction>
+    <TableColumn>
+      <Column Name="Rating" Range="A22:A31"/>
+      <Column Name="Value" Range="B22:B31"/>
+      <Column Name="FundCode" Range="FIHIR"/>
+    </TableColumn>
+    <IsDelete>true</IsDelete>
+    <TableHead>true</TableHead>
+    <ColumnList>AsOfDate,Rating,Value,FundCode</ColumnList>
+  </SourceMapping>
+
+  <!--AB HI - Characteristics (15)-->
+  <SourceMapping>
+    <NameRegex>HighIncomeexcelfileexampleQ(\d{5})</NameRegex>
+    <SheetName>AB HI - Characteristics (15)</SheetName>
+    <AsOfDate>B1</AsOfDate>
+    <Table>GBCounAllo</Table>
+    <MultiTable>true</MultiTable>
+    <Direction>Vertical</Direction>
+    <TableColumn>
+      <Column Name="Country" Range="A2:A12"/>
+      <Column Name="Percents" Range="B2:B12"/>
+      <Column Name="FundCode" Range="FIHIR"/>
+    </TableColumn>
+    <IsDelete>true</IsDelete>
+    <TableHead>true</TableHead>
+    <ColumnList>AsOfDate,Country,Percents,FundCode</ColumnList>
+  </SourceMapping>
+  <!--AB HI - Characteristics (15)-->
+  <SourceMapping>
+    <NameRegex>HighIncomeexcelfileexampleQ(\d{5})</NameRegex>
+    <SheetName>AB HI - Characteristics (15)</SheetName>
+    <AsOfDate>B15</AsOfDate>
+    <Table>GBCurDis</Table>
+    <MultiTable>true</MultiTable>
+    <Direction>Vertical</Direction>
+    <TableColumn>
+      <Column Name="Currency" Range="A16:A25"/>
+      <Column Name="Percents" Range="B16:B25"/>
+      <Column Name="FundCode" Range="FIHIR"/>
+    </TableColumn>
+    <IsDelete>true</IsDelete>
+    <TableHead>true</TableHead>
+    <ColumnList>AsOfDate,Currency,Percents,FundCode</ColumnList>
+  </SourceMapping>
+
+  <!--AB HI - Characteristics (16)-->
+  <SourceMapping>
+    <NameRegex>HighIncomeexcelfileexampleQ(\d{5})</NameRegex>
+    <SheetName>AB HI - Characteristics (16)</SheetName>
+    <AsOfDate></AsOfDate>
+    <Table>GBCreditQuality</Table>
+    <MultiTable>false</MultiTable>
+    <Direction>Vertical</Direction>
+    <TableColumn>
+      <Column Name="Date" Range="[[Date]]" SearchRange="A2:A100" ConvertFormat="MM/dd/yyyy"/>
+      <Column Name="AAA" Range="J{Date}:J{Date}" FormatBy="Date"/>
+      <Column Name="AA" Range="I{Date}:I{Date}" FormatBy="Date"/>
+      <Column Name="A" Range="H{Date}:H{Date}" FormatBy="Date"/>
+      <Column Name="BBB" Range="G{Date}:G{Date}" FormatBy="Date"/>
+      <Column Name="BB" Range="F{Date}:F{Date}" FormatBy="Date"/>
+      <Column Name="B" Range="E{Date}:E{Date}" FormatBy="Date"/>
+      <Column Name="CCCandBelow" Range="D{Date}:D{Date}" FormatBy="Date"/>
+      <Column Name="NR" Range="C{Date}:C{Date}" FormatBy="Date"/>
+      <Column Name="NA" Range="B{Date}:B{Date}" FormatBy="Date"/>
+      <Column Name="Cash" Range="K{Date}:K{Date}" FormatBy="Date"/>
+      <Column Name="FundCode" Range="FIHIR"/>
+    </TableColumn>
+    <IsDelete>true</IsDelete>
+    <TableHead>true</TableHead>
+    <ColumnList>AsOfDate,Date,AAA,AA,A,BBB,BB,B,CCCandBelow,NR,NA,Cash,FundCode</ColumnList>
+  </SourceMapping>
+  
+  <!--AB HI - Characteristics (16)-->
+  <SourceMapping>
+    <NameRegex>HighIncomeexcelfileexampleQ(\d{5})</NameRegex>
+    <SheetName>AB HI - Characteristics (16)</SheetName>
+    <AsOfDate></AsOfDate>
+    <Table>GBCredCurrBondExpo</Table>
+    <MultiTable>false</MultiTable>
+    <Direction>Vertical</Direction>
+    <TableColumn>
+      <Column Name="Date" Range="[[Date]]" SearchRange="O2:O100" ConvertFormat="MM/dd/yyyy"/>
+      <Column Name="Duration" Range="P{Date}:P{Date}" FormatBy="Date"/>
+      <Column Name="FundCode" Range="FIHIR"/>
+    </TableColumn>
+    <IsDelete>true</IsDelete>
+    <TableHead>true</TableHead>
+    <ColumnList>AsOfDate,Date,Duration,FundCode</ColumnList>
+  </SourceMapping>
+
+
+
+
+<!--GlobalBondexcelfileexampleQ-->
+
+  <!--LipperGlobalRank (4)-->
+  <SourceMapping>
+    <NameRegex>GlobalBondexcelfileexampleQ(\d{5})</NameRegex>
+    <SheetName>LipperGlobalRank (4)</SheetName>
+    <AsOfDate>B1</AsOfDate>
+    <Table>LipperGlobalincomeFundsRankings</Table>
+    <MultiTable>true</MultiTable>
+    <Direction>Horizontal</Direction>
+    <TableColumn>
+      <Column Name="PeriodTime" Range="B4:F4"/>
+      <Column Name="Quartile" Range="B5:F5"/>
+      <Column Name="Rank" Range="B6:F6"/>
+      <Column Name="FundCode" Range="FIGBR"/>
+    </TableColumn>
+    <IsDelete>true</IsDelete>
+    <TableHead>true</TableHead>
+    <ColumnList>AsOfDate,PeriodTime,Quartile,Rank,FundCode</ColumnList>
+  </SourceMapping>
+
+  <!--Ten Year US Treasury (5)-->
+  <SourceMapping>
+    <NameRegex>GlobalBondexcelfileexampleQ(\d{5})</NameRegex>
+    <SheetName>Ten Year US Treasury (5)</SheetName>
+    <AsOfDate>B1</AsOfDate>
+    <Table>US10YHistoricalData</Table>
+    <MultiTable>false</MultiTable>
+    <Direction>Vertical</Direction>
+    <TableColumn Filter="Date" Format="yyyy">
+      <Column Name="Date" Range="A3:A1500"/>
+      <Column Name="US10Y" Range="B3:B1500"/>
+      <Column Name="FundCode" Range="FIGBR"/>
+    </TableColumn>
+    <IsDelete>true</IsDelete>
+    <TableHead>true</TableHead>
+    <ColumnList>AsOfDate,Date,US10Y,FundCode</ColumnList>
+  </SourceMapping>
+
+  <!--"Quiltchar" Country Returns (7)-->
+  <SourceMapping>
+    <NameRegex>GlobalBondexcelfileexampleQ(\d{5})</NameRegex>
+    <SheetName>"Quiltchar" Country Returns (7)</SheetName>
+    <AsOfDate>B1</AsOfDate>
+    <Table>GBQuiltCharCountryReturns</Table>
+    <MultiTable>false</MultiTable>
+    <Direction>Vertical</Direction>
+    <TableColumn>
+      <Column Name="Year" Range="[[Year]]" SearchRange="A2:AZ2"/>
+      <Column Name="Country" Range="A3:A8"/>
+      <Column Name="Value" Range="{Year}3:{Year}8" FormatBy="Year"/>
+      <Column Name="FundCode" Range="FIGBR"/>
+    </TableColumn>
+    <IsDelete>true</IsDelete>
+    <TableHead>true</TableHead>
+    <ColumnList>AsOfDate,Year,Country,Value,FundCode</ColumnList>
+  </SourceMapping>
+
+  <!--Resear&Capabiliti  Leftdisp (8)-->
+  <SourceMapping>
+    <NameRegex>GlobalBondexcelfileexampleQ(\d{5})</NameRegex>
+    <SheetName>Resear&amp;Capabiliti  Leftdisp (8)</SheetName>
+    <AsOfDate>B1</AsOfDate>
+    <Table>GlobalBondCountryShareofMarket</Table>
+    <MultiTable>true</MultiTable>
+    <Direction>Vertical</Direction>
+    <TableColumn>
+      <Column Name="Country" Range="F3:F8"/>
+      <Column Name="ShareofMarket" Range="G3:G8"/>
+      <Column Name="FundCode" Range="FIGBR"/>
+    </TableColumn>
+    <IsDelete>true</IsDelete>
+    <TableHead>true</TableHead>
+    <ColumnList>AsOfDate,Country,ShareofMarket,FundCode</ColumnList>
+  </SourceMapping>
+
+  <!--Resear&Capabiliti  Leftdisp (8)-->
+  <SourceMapping>
+    <NameRegex>GlobalBondexcelfileexampleQ(\d{5})</NameRegex>
+    <SheetName>Resear&amp;Capabiliti  Leftdisp (8)</SheetName>
+    <AsOfDate>B1</AsOfDate>
+    <Table>GBUSShareofGlobalGovernmentMarkets</Table>
+    <MultiTable>false</MultiTable>
+    <Direction>Vertical</Direction>
+    <TableColumn Filter="Date" Format="yyyy">
+      <Column Name="Date" Range="A3:A1500"/>
+      <Column Name="USShare" Range="B3:B1500"/>
+      <Column Name="FundCode" Range="FIGBR"/>
+    </TableColumn>
+    <IsDelete>true</IsDelete>
+    <TableHead>true</TableHead>
+    <ColumnList>AsofDate,Date,USShare,FundCode</ColumnList>
+  </SourceMapping>
+
+  <!--Resear&Capabiliti  Rightdisp (8)-->
+  <SourceMapping>
+    <NameRegex>GlobalBondexcelfileexampleQ(\d{5})</NameRegex>
+    <SheetName>Resear&amp;Capabiliti Rightdisp (8)</SheetName>
+    <AsOfDate>B1</AsOfDate>
+    <Table>GBResearCapabilitiRightdispRight</Table>
+    <MultiTable>false</MultiTable>
+    <Direction>Vertical</Direction>
+    <TableColumn Filter="Date" Format="yyyy">
+      <Column Name="Date" Range="A3:A1500"/>
+      <Column Name="US" Range="B3:B1500"/>
+      <Column Name="NonUS" Range="C3:C1500"/>
+      <Column Name="FundCode" Range="FIGBR"/>
+    </TableColumn>
+    <IsDelete>true</IsDelete>
+    <TableHead>true</TableHead>
+    <ColumnList>AsOfDate,Date,US,NonUS,FundCode</ColumnList>
+  </SourceMapping>
+
+  <!--Quiltchart Multi Sector (9)-->
+  <SourceMapping>
+    <NameRegex>GlobalBondexcelfileexampleQ(\d{5})</NameRegex>
+    <SheetName>Quiltchart Multi Sector (9)</SheetName>
+    <AsOfDate>B1</AsOfDate>
+    <Table>GBQuiltcharMultiSector</Table>
+    <MultiTable>false</MultiTable>
+    <Direction>Vertical</Direction>
+    <TableColumn EmptyValue="true">
+      <Column Name="Year" Range="[[Year]]" SearchRange="A2:AZ2"/>
+      <Column Name="Value" Range="{Year}3:{Year}9" FormatBy="Year"/>
+      <Column Name="Bond" Range="A3:A9"/>
+      <Column Name="FundCode" Range="FIGBR"/>
+    </TableColumn>
+    <IsDelete>true</IsDelete>
+    <TableHead>true</TableHead>
+    <ColumnList>AsOfDate,Year,Value,Bond,FundCode</ColumnList>
+  </SourceMapping>
+
+  <!--Country & Currency (10)-->
+  <SourceMapping>
+    <NameRegex>GlobalBondexcelfileexampleQ(\d{5})</NameRegex>
+    <SheetName>Country &amp; Currency (10)</SheetName>
+    <AsOfDate>B1</AsOfDate>
+    <Table>GBCountryCurrencyBondReturns</Table>
+    <MultiTable>true</MultiTable>
+    <Direction>Vertical</Direction>
+    <TableColumn>
+      <Column Name="Year" Range="B1:B1" ValueFormat="yyyy" ConvertFormat="MM dd, yyyy"/>
+      <Column Name="Country" Range="A3:A8"/>
+      <Column Name="Returns" Range="B3:B8"/>
+      <Column Name="FundCode" Range="FIGBR"/>
+    </TableColumn>
+    <IsDelete>true</IsDelete>
+    <TableHead>true</TableHead>
+    <ColumnList>AsOfDate,Year,Country,Returns,FundCode</ColumnList>
+  </SourceMapping>
+
+  <!--Country & Currency (10)-->
+  <SourceMapping>
+    <NameRegex>GlobalBondexcelfileexampleQ(\d{5})</NameRegex>
+    <SheetName>Country &amp; Currency (10)</SheetName>
+    <AsOfDate>B1</AsOfDate>
+    <Table>GBCountryCurrencyReturnsUSD</Table>
+    <MultiTable>true</MultiTable>
+    <Direction>Vertical</Direction>
+    <TableColumn>
+      <Column Name="Year" Range="B1:B1" ValueFormat="yyyy" ConvertFormat="MM dd, yyyy"/>
+      <Column Name="Currency" Range="A11:A16"/>
+      <Column Name="Returns" Range="B11:B16"/>
+      <Column Name="FundCode" Range="FIGBR"/>
+    </TableColumn>
+    <IsDelete>true</IsDelete>
+    <TableHead>true</TableHead>
+    <ColumnList>AsOfDate,Year,Currency,Returns,FundCode</ColumnList>
+  </SourceMapping>
+
+  <!--Annlz Ret Leftdisp (11)-->
+  <SourceMapping>
+    <NameRegex>GlobalBondexcelfileexampleQ(\d{5})</NameRegex>
+    <SheetName>Annlz Ret Leftdisp (11)</SheetName>
+    <AsOfDate>B1</AsOfDate>
+    <Table>GBAnnlzRetLeftdisp</Table>
+    <MultiTable>true</MultiTable>
+    <Direction>Vertical</Direction>
+    <TableColumn>
+      <Column Name="Bonds" Range="A3:A5"/>
+      <Column Name="Returns" Range="B3:B5"/>
+      <Column Name="FundCode" Range="FIGBR"/>
+    </TableColumn>
+    <IsDelete>true</IsDelete>
+    <TableHead>true</TableHead>
+    <ColumnList>AsOfDate,Bonds,Returns,FundCode</ColumnList>
+  </SourceMapping>
+
+  <!--  Rolling Vol Rightdisp (11)  all of the data, not only 12 rows Set MultiTable false or true-->
+  <SourceMapping>
+    <NameRegex>GlobalBondexcelfileexampleQ(\d{5})</NameRegex>
+    <SheetName>Rolling Vol Rightdisp (11)</SheetName>
+    <AsOfDate>B1</AsOfDate>
+    <Table>GBRollingVolRightdisp</Table>
+    <MultiTable>false</MultiTable>
+    <Direction>Vertical</Direction>
+    <TableColumn Filter="Date" Format="yyyy">
+      <Column Name="Date" Range="A16:A1500"/>
+      <Column Name="GblUH" Range="B16:B1500"/>
+      <Column Name="GblH" Range="C16:C1500"/>
+      <Column Name="USAgg" Range="D16:C1500"/>
+      <Column Name="FundCode" Range="FIGBR"/>
+    </TableColumn>
+    <IsDelete>true</IsDelete>
+    <TableHead>true</TableHead>
+    <ColumnList>AsOfDate,Date,GblUH,GblH,USAgg,FundCode</ColumnList>
+  </SourceMapping>
+
+  <!--Sharpe Ratio (12) all of the data, not only 12 rows-->
+  <SourceMapping>
+    <NameRegex>GlobalBondexcelfileexampleQ(\d{5})</NameRegex>
+    <SheetName>Sharpe Ratio (12)</SheetName>
+    <AsOfDate>B1</AsOfDate>
+    <Table>GBSharpeRatio</Table>
+    <MultiTable>false</MultiTable>
+    <Direction>Vertical</Direction>
+    <TableColumn Filter="Date" Format="yyyy" EmptyValue="true">
+      <Column Name="Date" Range="A12:A1500"/>
+      <Column Name="Positive" Range="B12:B1500"/>
+      <Column Name="Negative" Range="C12:C1500"/>
+      <Column Name="FundCode" Range="FIGBR"/>
+    </TableColumn>
+    <IsDelete>true</IsDelete>
+    <TableHead>true</TableHead>
+    <ColumnList>AsOfDate,Date,Positive,Negative,FundCode</ColumnList>
+  </SourceMapping>
+
+  <!--Morningstar RisAdjRet (16)-->
+  <SourceMapping>
+    <NameRegex>GlobalBondexcelfileexampleQ(\d{5})</NameRegex>
+    <SheetName>Morningstar RisAdjRet (16)</SheetName>
+    <AsOfDate>B1</AsOfDate>
+    <Table>GBMorningstarRisAdjRet</Table>
+    <MultiTable>true</MultiTable>
+    <Direction>Vertical</Direction>
+    <TableColumn>
+      <Column Name="Item" Range="H8:H10" Ingore="(%)"/>
+      <Column Name="TotalRet" Range="I8:I10"/>
+      <Column Name="StdDev" Range="J8:J10"/>
+      <Column Name="InformationRatio" Range="K8:K10"/>
+      <Column Name="SharpeRatio" Range="L8:L10"/>
+      <Column Name="BattingAverage" Range="M8:M10"/>
+      <Column Name="FundCode" Range="FIGBR"/>
+    </TableColumn>
+    <IsDelete>true</IsDelete>
+    <TableHead>true</TableHead>
+    <ColumnList>AsOfDate,Item,TotalRet,StdDev,InformationRatio,SharpeRatio,BattingAverage,FundCode</ColumnList>
+  </SourceMapping>
+
+  <!--ABGlobal Sector&CredQual (17)-->
+  <SourceMapping>
+    <NameRegex>GlobalBondexcelfileexampleQ(\d{5})</NameRegex>
+    <SheetName>ABGlobal Sector&amp;CredQual (17)</SheetName>
+    <AsOfDate>B1</AsOfDate>
+    <Table>GBQuaDis</Table>
+    <MultiTable>true</MultiTable>
+    <Direction>Vertical</Direction>
+    <TableColumn>
+      <Column Name="Rating" Range="A3:A12"/>
+      <Column Name="Value" Range="B3:B12"/>
+      <Column Name="FundCode" Range="FIGBR"/>
+    </TableColumn>
+    <IsDelete>true</IsDelete>
+    <TableHead>true</TableHead>
+    <ColumnList>AsOfDate,Rating,Value,FundCode</ColumnList>
+  </SourceMapping>
+  <!--ABGlobal Sector&CredQual (17)-->
+  <SourceMapping>
+    <NameRegex>GlobalBondexcelfileexampleQ(\d{5})</NameRegex>
+    <SheetName>ABGlobal Sector&amp;CredQual (17)</SheetName>
+    <AsOfDate>B1</AsOfDate>
+    <Table>GBSectAllo</Table>
+    <MultiTable>true</MultiTable>
+    <Direction>Vertical</Direction>
+    <TableColumn>
+      <Column Name="Sector" Range="A16:A20"/>
+      <Column Name="Value" Range="B16:B20"/>
+      <Column Name="FundCode" Range="FIGBR"/>
+    </TableColumn>
+    <IsDelete>true</IsDelete>
+    <TableHead>true</TableHead>
+    <ColumnList>AsOfDate,Sector,Value,FundCode</ColumnList>
+  </SourceMapping>
+  <!--ABGlobal Sector&CredQual (17)-->
+  <SourceMapping>
+    <NameRegex>GlobalBondexcelfileexampleQ(\d{5})</NameRegex>
+    <SheetName>ABGlobal Sector&amp;CredQual (17)</SheetName>
+    <AsOfDate>B1</AsOfDate>
+    <Table>GBPortChar</Table>
+    <MultiTable>true</MultiTable>
+    <Direction>Vertical</Direction>
+    <TableColumn>
+      <Column Name="Item" Range="A23:A26"/>
+      <Column Name="Characteristics" Range="B23:B26"/>
+      <Column Name="FundCode" Range="FIGBR"/>
+    </TableColumn>
+    <IsDelete>true</IsDelete>
+    <TableHead>true</TableHead>
+    <ColumnList>AsOfDate,Item,Characteristics,FundCode</ColumnList>
+  </SourceMapping>
+
+  <!--ABGlobal Country&Currency (18)-->
+  <SourceMapping>
+    <NameRegex>GlobalBondexcelfileexampleQ(\d{5})</NameRegex>
+    <SheetName>ABGlobal Country&amp;Currency (18)</SheetName>
+    <AsOfDate>B1</AsOfDate>
+    <Table>GBCounAllo</Table>
+    <MultiTable>true</MultiTable>
+    <Direction>Vertical</Direction>
+    <TableColumn>
+      <Column Name="Country" Range="A3:A17"/>
+      <Column Name="Percents" Range="B3:B17"/>
+      <Column Name="FundCode" Range="FIGBR"/>
+    </TableColumn>
+    <IsDelete>true</IsDelete>
+    <TableHead>true</TableHead>
+    <ColumnList>AsOfDate,Country,Percents,FundCode</ColumnList>
+  </SourceMapping>
+  <!--ABGlobal Country&Currency (18)-->
+  <SourceMapping>
+    <NameRegex>GlobalBondexcelfileexampleQ(\d{5})</NameRegex>
+    <SheetName>ABGlobal Country&amp;Currency (18)</SheetName>
+    <AsOfDate>B1</AsOfDate>
+    <Table>GBCurDis</Table>
+    <MultiTable>true</MultiTable>
+    <Direction>Vertical</Direction>
+    <TableColumn>
+      <Column Name="Currency" Range="A20:A27"/>
+      <Column Name="Percents" Range="B20:B27"/>
+      <Column Name="FundCode" Range="FIGBR"/>
+    </TableColumn>
+    <IsDelete>true</IsDelete>
+    <TableHead>true</TableHead>
+    <ColumnList>AsOfDate,Currency,Percents,FundCode</ColumnList>
+  </SourceMapping>
+  
+  <!--ABGlobal Sect PortConstruc (19)-->
+  <SourceMapping>
+    <NameRegex>GlobalBondexcelfileexampleQ(\d{5})</NameRegex>
+    <SheetName>ABGlobal Sect PortConstruc (19)</SheetName>
+    <AsOfDate>B1</AsOfDate>
+    <Table>GBSectPortConstruc-FIGBR</Table>
+    <MultiTable>false</MultiTable>
+    <Direction>Horizontal</Direction>
+    <TableColumn>
+      <Column Name="Sector" Range="[[Date]]" SearchRange="A4:A200" ConvertFormat="MM/dd/yy" Ingore="'"/>
+      <Column Name="GovernmentsTreasuries" Range="B{Sector}:B{Sector}" FormatBy="Sector"/>
+      <Column Name="CorporateNonInvestmentGrade" Range="F{Sector}:F{Sector}" FormatBy="Sector"/>
+      <Column Name="CMBS" Range="G{Sector}:G{Sector}" FormatBy="Sector"/>
+      <Column Name="CMOABS" Range="H{Sector}:H{Sector}" FormatBy="Sector"/>
+      <Column Name="Other" Range="K{Sector}:K{Sector}" FormatBy="Sector"/>
+      <Column Name="GovernmentsSovereignAgencies" Range="M{Sector}:M{Sector}" FormatBy="Sector"/>
+      <Column Name="BankLoans" Range="N{Sector}:N{Sector}" FormatBy="Sector"/>
+      <Column Name="QuasiSovereigns" Range="O{Sector}:O{Sector}" FormatBy="Sector"/>
+      <Column Name="CorporateInvestmentGrade" Range="C{Sector}:C{Sector}" FormatBy="Sector"/>
+      <Column Name="AgencyMBS" Range="D{Sector}:D{Sector}" FormatBy="Sector"/>
+      <Column Name="ShortTermInvestments" Range="E{Sector}:E{Sector}" FormatBy="Sector"/>
+      <Column Name="CoveredBonds" Range="I{Sector}:I{Sector}" FormatBy="Sector"/>
+      <Column Name="InflationLinkedSecurities" Range="J{Sector}:J{Sector}" FormatBy="Sector"/>
+      <Column Name="Supranationals" Range="L{Sector}:L{Sector}" FormatBy="Sector"/>
+      <Column Name="FundCode" Range="FIGBR"/>
+    </TableColumn>
+    <IsDelete>true</IsDelete>
+    <TableHead>true</TableHead>
+    <ColumnList>AsOfDate,Sector,GovernmentsTreasuries,CorporateNonInvestmentGrade,CMBS,CMOABS,Other,GovernmentsSovereignAgencies,BankLoans,QuasiSovereigns,CorporateInvestmentGrade,AgencyMBS,ShortTermInvestments,CoveredBonds,InflationLinkedSecurities,Supranationals,FundCode</ColumnList>
+  </SourceMapping>
+  
+  <!--ABGlobal CredPortConstruc (20)-->
+  <SourceMapping>
+    <NameRegex>GlobalBondexcelfileexampleQ(\d{5})</NameRegex>
+    <SheetName>ABGlobal CredPortConstruc (20)</SheetName>
+    <AsOfDate>B1</AsOfDate>
+    <Table>GBCreditQuality-FIGBR</Table>
+    <MultiTable>false</MultiTable>
+    <Direction>Horizontal</Direction>
+    <TableColumn>
+      <Column Name="Date" Range="[[Date]]" SearchRange="A2:A100" ConvertFormat="MM/dd/yyyy"/>
+      <Column Name="AAA" Range="B{Date}:B{Date}" FormatBy="Date"/>
+      <Column Name="AA" Range="C{Date}:C{Date}" FormatBy="Date"/>
+      <Column Name="A" Range="D{Date}:D{Date}" FormatBy="Date"/>
+      <Column Name="BBB" Range="E{Date}:E{Date}" FormatBy="Date"/>
+      <Column Name="BB" Range="F{Date}:F{Date}" FormatBy="Date"/>
+      <Column Name="B" Range="G{Date}:G{Date}" FormatBy="Date"/>
+      <Column Name="CCCandBelow" Range="H{Date}:H{Date}" FormatBy="Date"/>
+      <Column Name="ShortTermInvestments" Range="I{Date}:I{Date}" FormatBy="Date"/>
+      <Column Name="NR" Range="J{Date}:J{Date}" FormatBy="Date"/>
+      <Column Name="NA" Range="K{Date}:K{Date}" FormatBy="Date"/>
+      <Column Name="FundCode" Range="FIGBR"/>
+    </TableColumn>
+    <IsDelete>true</IsDelete>
+    <TableHead>true</TableHead>
+    <ColumnList>AsOfDate,Date,AAA,AA,A,BBB,BB,B,CCCandBelow,ShortTermInvestments,NR,NA,FundCode</ColumnList>
+  </SourceMapping>
+
+  <!--ABGlobal Bond Fund Perf (21)-->
+  <SourceMapping>
+    <NameRegex>GlobalBondexcelfileexampleQ(\d{5})</NameRegex>
+    <SheetName>ABGlobal Bond Fund Perf (21)</SheetName>
+    <AsOfDate>B1</AsOfDate>
+    <Table>GBPerformanceSummary-FIGBR</Table>
+    <MultiTable>true</MultiTable>
+    <Direction>Vertical</Direction>
+    <TableColumn EmptyValue="true">
+      <Column Name="ProductGroup" Range="US Domiciled Mutual Funds"/>
+      <Column Name="ProductBenchmark" Range="B7:B9"/>
+      <Column Name="InceptionDate" Range="C7:C9"/>
+      <Column Name="Currency" Range="D7:D9"/>
+      <Column Name="Fee" Range="E7:E9"/>
+      <Column Name="QTD" Range="F7:F9"/>
+      <Column Name="OneYR" Range="G7:G9"/>
+      <Column Name="ThreeYR" Range="H7:H9"/>
+      <Column Name="FiveYR" Range="I7:I9"/>
+      <Column Name="Inception" Range="J7:J9"/>
+      <Column Name="ExpenseRatio" Range="A13:A13"/>
+      <Column Name="FundCode" Range="FIGBR"/>
+    </TableColumn>
+    <IsDelete>true</IsDelete>
+    <TableHead>true</TableHead>
+    <ColumnList>AsOfDate,ProductGroup,ProductBenchmark,InceptionDate,Currency,Fee,QTD,OneYR,ThreeYR,FiveYR,Inception,ExpenseRatio,FundCode</ColumnList>
+  </SourceMapping>
+  
+</SourceMappings>
+
+
+
